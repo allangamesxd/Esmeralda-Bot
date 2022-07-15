@@ -45,8 +45,6 @@ client.on("messageCreate", async (message) => {
 
     if (!message.content.toLowerCase().startsWith(config.prefix.toLowerCase())) return;
 
-  if(id == "779695926855204865" || id == "822532606074683423") return message.reply(`:x: Infelizmente, você está em minha blacklist.`);
-  
 if (!message.content.toLowerCase().startsWith(config.prefix.toLowerCase())) return;
 
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
@@ -74,4 +72,3 @@ client.on("ready", () => { // quando ela ficar online...
     client.user.setActivity({ name: `prefixo: ${config.prefix} | ${client.guilds.cache.size} Servidores`, type: "PLAYING" })
     client.user.setStatus("online");
 });
-      })
